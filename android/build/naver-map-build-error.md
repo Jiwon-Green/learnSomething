@@ -12,7 +12,7 @@
 `settings.gradle` 에도 `maven {url 'https://naver.jfrog.io/artifactory/maven/'}` 추가하니까 됐다!
 
 <br>
-![image](https://user-images.githubusercontent.com/95398241/150718635-98af34ed-fdc5-4939-9269-c4ac7e48b6a6.png)
+![image](https://user-images.githubusercontent.com/95398241/150718635-98af34ed-fdc5-4939-9269-c4ac7e48b6a6.png) <br>
 그리고 이 부분에서는 androidx 랑 충돌난다던데 `gradle.properties` 에 아래 두줄 추가하면 된다고 함 <br>
 ```
 android.useAndroidX=true
