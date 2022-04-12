@@ -22,3 +22,20 @@
 android.useAndroidX=true
 android.enableJetifier=true
 ```
+
+## 안된 이유
+공식문서에 따르면
+
+- android.useAndroidX=true
+   - Android 플러그인은 지원 라이브러리 대신 적절한 AndroidX 라이브러리를 사용합니다.
+- android.enableJetifier=true
+   - Android 플러그인은 바이너리를 다시 작성해 기존 타사 라이브러리를 자동으로 이전하여 AndroidX를 사용합니다.
+
+즉 지도 SDK 가 android support 라이브러리를 지원하고 있었기에
+위 두 설정을 true로 해줌으로서 android support 라이브러리를 적절한 androidx 라이브러리를 사용하도록 한다.
+androidx로 migration 한 것!
+
+androidx support를 true 로 설정해주어도 모든 외부 라이브러리를 처리하지 못할 수 있다.
+이에 관한 내용은 [요기서](https://developer.android.com/jetpack/androidx/migrate?hl=ko#mappings) 확인할 수 있다.
+
+아마도 이 때문인 것 같음 ㅎ
