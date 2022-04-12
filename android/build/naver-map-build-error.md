@@ -22,5 +22,3 @@
 android.useAndroidX=true
 android.enableJetifier=true
 ```
-
-## 왜되는데 
